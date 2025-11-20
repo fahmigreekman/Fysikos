@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fysikos | Termodinamika</title>
+  <link rel="stylesheet" href="hitungan.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="logo">
+      <span class="fysi">Fysi</span><span class="kos">kos</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html"><i class="fas fa-home"></i> Beranda</a></li>
+      <li><a href="tentang.html"><i class="fas fa-info-circle"></i> Tentang</a></li>
+      <li><a href="kontak.html"><i class="fas fa-envelope"></i> Kontak</a></li>
+      <li><a href="kebijakanprivasi.html"><i class="fas fa-user-shield"></i> Privasi</a></li>
+    </ul>
+  </nav>
+
+  <div class="callc">
+    <h1>Mari Berhitung</h1>
+    <p>Pilih topik perhitungan termodinamika yang ingin digunakan.</p>
+
+    <label for="pilih-topik">Pilih Rumus Termodinamika:</label>
+    <select id="pilih-topik" onchange="tampilkanKalkulator()">
+      <option value="">--Pilih Rumus--</option>
+      <option value="hukum-pertama">Hukum I Termodinamika</option>
+      <option value="usaha-gas">Usaha (Work)</option>
+      <option value="energi-dalam">Energi Dalam</option>
+      <option value="isobarik">Proses Isobarik</option>
+      <option value="isochorik">Proses Isokhorik</option>
+      <option value="isotermal">Proses Isotermal</option>
+      <option value="adiabatik">Proses Adiabatik</option>
+      <option value="efisiensi-mesin">Efisiensi Mesin Kalor</option>
+      <option value="efisiensi-carnot">Efisiensi Mesin Carnot</option>
+      <option value="cop-pendingin">Mesin Pendingin (Kulkas)</option>
+    </select>
+
+
+    <hr>
+
+    <div id="kalkulator-area">
+
+    </div>
+  </div>
+
+  <div>
+    <a href="index.html" class="btn-back" aria-label="Kembali ke halaman Utama">
+      <i class="fas fa-home"></i>
+    </a>
+  </div>
+
+  <footer class="footer">
+        <p>© 2025 Fysikos — Memudahkan manusia berhitung.</p>
+    </footer>
+
+  <script src="termodinamika.js"></script>
+</body>
+
+</html>

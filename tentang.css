@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Poppins:wght@400;500;600&display=swap');
+
+:root {
+  --primary: #0b2c66;      
+  --secondary: #ffd700;
+  --text-dark: #1e293b;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+body {
+  background-image: url("back.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.navbar {
+  background-color: #0b2c66;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.logo {
+  font-size: 1.8em;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.logo .fysi {
+  color: #ffd700;
+}
+
+.logo .kos {
+  color: #dce6ff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ffd700;
+}
+
+.fysikos {
+    color: #ffd700;
+}
+
+.about-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px 60px 20px;
+}
+
+.about-card {
+  background: rgba(11, 44, 102, 0.85);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  border-radius: 20px;
+  padding: 50px;
+  max-width: 900px;
+  width: 100%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  animation: fadeIn Up 0.8s ease-out;
+}
+
+.about-card h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.text-gold {
+  color: var(--secondary);
+}
+
+.tagline {
+  color: #dce6ff;
+  font-style: italic;
+  margin-bottom: 30px;
+  font-size: 1.1em;
+  position: relative;
+  display: inline-block;
+}
+
+.tagline::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--secondary);
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.content-body {
+  font-size: 1.05em;
+  line-height: 1.8;
+  margin-bottom: 40px;
+  color: #f0f0f0;
+}
+
+.origin-box {
+  background: rgba(255, 255, 255, 0.03);
+  border-left: 4px solid var(--secondary);
+  padding: 25px;
+  margin-bottom: 40px;
+  text-align: left;
+  border-radius: 0 15px 15px 0;
+}
+
+.origin-box h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5em;
+  color: white;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.origin-box p {
+  font-size: 0.95em;
+  color: #dce6ff;
+  line-height: 1.7;
+}
+
+.vm-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.vm-card {
+  background: rgba(11, 20, 50, 0.6);
+  padding: 30px;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 215, 0, 0.1);
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.vm-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255, 215, 0, 0.3);
+}
+
+.vm-icon {
+  font-size: 2em;
+  color: var(--secondary);
+  margin-bottom: 15px;
+}
+
+.vm-card h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3em;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.vm-card p {
+  font-size: 0.9em;
+  color: #dce6ff;
+  line-height: 1.6;
+}
+
+.vm-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.vm-card ul li {
+  font-size: 0.9em;
+  color: #dce6ff;
+  line-height: 1.6;
+  margin-bottom: 8px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.vm-card ul li::before {
+  content: '▹';
+  color: var(--secondary);
+  position: absolute;
+  left: 0;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.feature-item {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 25px;
+  border-radius: 15px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.feature-item:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.feature-icon {
+  font-size: 2.5em;
+  color: var(--secondary);
+  margin-bottom: 15px;
+}
+
+.feature-item h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.feature-item p {
+  font-size: 0.9em;
+  color: #dce6ff;
+}
+
+
+footer {
+  background-color: #0a2455;
+  color: #ddd;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+  margin-top: auto;
+  font-family: 'Poppins', sans-serif;
+}
+
+.nav-links a.active {
+    color: #ffd700;
+    position: relative;
+}
+
+.nav-links a.active::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #ffd700;
+}
+
+.nav-scrolled {
+    background-color: rgba(11, 44, 102, 0.95) !important;
+    padding: 10px 30px !important;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+.about-card,
+.feature-item,
+.bubble,
+.origin-box,
+.vm-card {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.feature-item:nth-child(1) { transition-delay: 0.1s; }
+.feature-item:nth-child(2) { transition-delay: 0.2s; }
+.feature-item:nth-child(3) { transition-delay: 0.3s; }
+
+@media (max-width: 992px) {
+  .navbar {
+    padding: 12px 20px;
+  }
+
+  .logo {
+    font-size: 1.5em;
+  }
+
+  .nav-links {
+    gap: 18px;
+  }
+
+  .nav-links a {
+    font-size: 0.95em;
+  }
+
+  .about-section {
+    padding: 60px 20px 50px;
+  }
+
+  .about-card h1 {
+    font-size: 2.2em;
+  }
+  .tagline {
+    font-size: 1.05em;
+  }
+  .content-body {
+    font-size: 1em;
+  }
+  .feature-item h3 {
+    font-size: 1.15em;
+  }
+  .feature-item p {
+    font-size: 0.85em;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 15px 20px;
+    gap: 10px;
+  }
+
+  .nav-links {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .logo {
+    font-size: 1.7em;
+  }
+
+  .about-section {
+    padding: 70px 15px 50px;
+  }
+
+  .about-card {
+    padding: 40px;
+  }
+  .about-card h1 {
+    font-size: 2em;
+  }
+  .tagline {
+    font-size: 1em;
+  }
+  .content-body {
+    font-size: 0.95em;
+    line-height: 1.7;
+  }
+  .origin-box h2, .vm-card h3 {
+    font-size: 1.2em;
+  }
+  .feature-item h3 {
+    font-size: 1.1em;
+  }
+  .feature-item p {
+    font-size: 0.85em;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    padding: 12px 15px;
+  }
+
+  .logo {
+    font-size: 1.5em;
+    letter-spacing: 0.5px;
+  }
+
+  .logo .fysi {
+    font-size: 1.1em;
+  }
+
+  .nav-links {
+    gap: 12px;
+    font-size: 0.9em;
+  }
+
+  .nav-links a {
+    font-weight: 500;
+  }
+
+  .about-section {
+    padding: 50px 10px 40px;
+  }
+
+  footer {
+    padding: 18px 15px;
+    font-size: 0.8em;
+  }
+
+  .about-card {
+    padding: 30px 25px;
+  }
+  .about-card h1 {
+    font-size: 1.8em;
+  }
+  .tagline {
+    font-size: 0.95em;
+  }
+  .content-body {
+    font-size: 0.9em;
+    line-height: 1.7;
+    margin-bottom: 30px;
+  }
+  .vm-section {
+    grid-template-columns: 1fr;
+  }
+  .feature-item h3 {
+    font-size: 1.05em;
+  }
+  .feature-item p {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 400px) {
+  .logo {
+    font-size: 1.3em;
+  }
+
+  .nav-links a {
+    font-size: 0.85em;
+  }
+
+  .about-section {
+    padding: 50px 10px 30px;
+  }
+
+  .about-card {
+    padding: 25px 20px;
+  }
+  .about-card h1 {
+    font-size: 1.6em;
+  }
+  .tagline {
+    font-size: 0.9em;
+  }
+  .content-body {
+    font-size: 0.85em;
+    line-height: 1.6;
+  }
+  .feature-item h3 {
+    font-size: 1em;
+  }
+  .feature-item p {
+    font-size: 0.8em;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+       (min-resolution: 192dpi) {
+  body {
+    background-image: url("back.jpg");
+  }
+}

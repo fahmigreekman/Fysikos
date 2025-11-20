@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fysikos | Optik</title>
+    <link rel="stylesheet" href="hitungan.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <span class="fysi">Fysi</span><span class="kos">kos</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html"><i class="fas fa-home"></i> Beranda</a></li>
+            <li><a href="tentang.html"><i class="fas fa-info-circle"></i> Tentang</a></li>
+            <li><a href="kontak.html"><i class="fas fa-envelope"></i> Kontak</a></li>
+            <li><a href="kebijakanprivasi.html"><i class="fas fa-user-shield"></i> Privasi</a></li>
+        </ul>
+    </nav>
+
+    <div class="callc">
+        <h1>Mari Berhitung</h1>
+        <p>Pilih topik perhitungan optik yang ingin digunakan.</p>
+
+        <label for="pilih-topik">Pilih Rumus Optik:</label>
+        <select id="pilih-topik" onchange="tampilkanKalkulator()">
+            <option value="">--Pilih Rumus--</option>
+
+            <optgroup label="A. Optika Geometri (Pemantulan & Pembiasan)">
+                <option value="cermin-lengkung">Cermin Lengkung (Cekung & Cembung)</option>
+                <option value="pembiasan-snellius">Hukum Snellius & Indeks Bias</option>
+                <option value="kedalaman-semu">Kedalaman Semu</option>
+                <option value="lensa-tipis">Lensa Tipis (Cekung & Cembung)</option>
+                <option value="kekuatan-lensa">Kekuatan Lensa (Dioptri)</option>
+                <option value="pembuat-lensa">Rumus Pembuat Lensa</option>
+            </optgroup>
+
+            <optgroup label="B. Alat Optik">
+                <option value="mata-kacamata">Mata & Kacamata (Miopi/Hipermetropi)</option>
+                <option value="lup">Lup (Kaca Pembesar)</option>
+                <option value="mikroskop">Mikroskop</option>
+                <option value="teropong-bintang">Teropong Bintang</option>
+            </optgroup>
+
+            <optgroup label="C. Optika Fisis (Gelombang Cahaya)">
+                <option value="celah-ganda">Interferensi Celah Ganda (Young)</option>
+                <option value="difraksi-kisi">Difraksi Kisi</option>
+                <option value="celah-tunggal">Difraksi Celah Tunggal</option>
+                <option value="polarisasi">Polarisasi (Malus & Brewster)</option>
+            </optgroup>
+        </select>
+
+        <hr>
+
+        <div id="kalkulator-area">
+            </div>
+    </div>
+
+    <div>
+        <a href="index.html" class="btn-back" aria-label="Kembali ke halaman Utama">
+            <i class="fas fa-home"></i>
+        </a>
+    </div>
+
+    <footer class="footer">
+        <p>© 2025 Fysikos — Memudahkan manusia berhitung.</p>
+    </footer>
+
+    <script src="optik.js"></script>
+</body>
+
+</html>

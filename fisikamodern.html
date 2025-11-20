@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fysikos | Fisika Modern</title>
+    <link rel="stylesheet" href="hitungan.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <span class="fysi">Fysi</span><span class="kos">kos</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html"><i class="fas fa-home"></i> Beranda</a></li>
+            <li><a href="tentang.html"><i class="fas fa-info-circle"></i> Tentang</a></li>
+            <li><a href="kontak.html"><i class="fas fa-envelope"></i> Kontak</a></li>
+            <li><a href="kebijakanprivasi.html"><i class="fas fa-user-shield"></i> Privasi</a></li>
+        </ul>
+    </nav>
+
+    <div class="callc">
+        <h1>Mari Berhitung</h1>
+        <p>Pilih topik perhitungan fisika modern yang ingin digunakan.</p>
+
+        <label for="pilih-topik">Pilih Rumus Fisika Modern:</label>
+        <select id="pilih-topik" onchange="tampilkanKalkulator()">
+            <option value="">--Pilih Rumus--</option>
+
+            <optgroup label="A. Relativitas Khusus">
+                <option value="tetapan-transformasi">Tetapan Lorentz (Gamma)</option>
+                <option value="penjumlahan-kecepatan">Penjumlahan Kecepatan Relativistik</option>
+                <option value="dilatasi-waktu">Dilatasi Waktu (Waktu Mulur)</option>
+                <option value="kontraksi-panjang">Kontraksi Panjang</option>
+                <option value="massa-relativistik">Massa Relativistik</option>
+                <option value="energi-relativistik">Energi Total & Kinetik Relativistik</option>
+            </optgroup>
+
+            <optgroup label="B. Fenomena Kuantum">
+                <option value="radiasi-benda-hitam">Hukum Pergeseran Wien</option>
+                <option value="energi-foton">Energi Foton (Planck)</option>
+                <option value="efek-fotolistrik">Efek Fotolistrik</option>
+                <option value="efek-compton">Efek Compton (Hamburan)</option>
+                <option value="hipotesa-de-broglie">Panjang Gelombang de Broglie</option>
+            </optgroup>
+
+            <optgroup label="C. Teori Atom (Model Bohr)">
+                <option value="jari-jari-bohr">Jari-jari Lintasan Elektron</option>
+                <option value="energi-atom">Tingkat Energi Elektron</option>
+                <option value="spektrum-atom">Transisi Elektron & Panjang Gelombang</option>
+            </optgroup>
+
+            <optgroup label="D. Fisika Inti & Radioaktivitas">
+                <option value="defek-massa">Defek Massa & Energi Ikat</option>
+                <option value="waktu-paruh">Peluruhan & Waktu Paruh</option>
+                <option value="aktivitas-radiasi">Aktivitas Radiasi</option>
+                <option value="reaksi-inti">Energi Reaksi Inti</option>
+            </optgroup>
+        </select>
+
+        <hr>
+
+        <div id="kalkulator-area">
+
+        </div>
+    </div>
+
+    <div>
+        <a href="index.html" class="btn-back" aria-label="Kembali ke halaman Utama">
+            <i class="fas fa-home"></i>
+        </a>
+    </div>
+
+    <footer class="footer">
+        <p>© 2025 Fysikos — Memudahkan manusia berhitung.</p>
+    </footer>
+
+    <script src="fisikamodern.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fysikos</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <span class="fysi">Fysi</span><span class="kos">kos</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active"><i class="fas fa-home"></i> Beranda</a></li>
+            <li><a href="tentang.html"><i class="fas fa-info-circle"></i> Tentang</a></li>
+            <li><a href="kontak.html"><i class="fas fa-envelope"></i> Kontak</a></li>
+            <li><a href="kebijakanprivasi.html"><i class="fas fa-user-shield"></i> Privasi</a></li>
+        </ul>
+    </nav>
+
+    <main class="site-main" role="main">
+        <section class="intro" aria-labelledby="judul-topik">
+            <h1 id="judul-topik">Pilih Materi Fisika</h1>
+
+            <div class="bubble-wrapper" role="list" aria-label="Daftar topik fisika">
+                <a class="bubble" role="listitem" href="mekanikaklasik.html">
+                    <span class="bubble-title">Mekanika Klasik</span>
+                </a>
+
+                <a class="bubble" role="listitem" href="termodinamika.html">
+                    <span class="bubble-title">Termodinamika</span>
+                </a>
+
+                <a class="bubble" role="listitem" href="elektromagnetisme.html">
+                    <span class="bubble-title">Elektromagnetisme</span>
+                </a>
+
+                <a class="bubble" role="listitem" href="fluida.html">
+                    <span class="bubble-title">Fluida</span>
+                </a>
+
+                <a class="bubble" role="listitem" href="gelombang.html">
+                    <span class="bubble-title">Gelombang</span>
+                </a>
+
+                <a class="bubble" role="listitem" href="optik.html">
+                    <span class="bubble-title">Optik</span>
+                </a>
+
+                <a class="bubble" role="listitem" href="fisikamodern.html">
+                    <span class="bubble-title">Fisika Modern</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 Fysikos — Memudahkan manusia berhitung.</p>
+    </footer>
+
+    <div id="system-splash" class="splash-overlay">
+        <div class="splash-modal">
+            <div class="splash-header">
+                <i class="fas fa-server splash-icon"></i>
+                <h2>Pemberitahuan Sistem</h2>
+            </div>
+            <div class="splash-body">
+                <h3>Integritas Perhitungan Matematika</h3>
+                <p>Platform ini menggunakan arsitektur <strong>Konstanta Matematika Tetap (const)</strong> untuk
+                    menjamin presisi perhitungan ilmiah.</p>
+                <p>Seluruh kalkulasi fisika dilakukan tanpa pembulatan dini untuk menghindari margin error
+                    (floating-point inaccuracy) pada simulasi sensitif.</p>
+                <hr>
+                <p class="small-note"><i class="fas fa-exclamation-triangle"></i> Pastikan anda telah membacaca peringatan ini, Terima Kasih!</p>
+            </div>
+            <div class="splash-footer">
+                <label class="checkbox-container">
+                    <input type="checkbox" id="dont-show-again">
+                    <span class="checkmark"></span>
+                    Jangan tampilkan lagi
+                </label>
+                <button id="btn-understand">Mengerti</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
